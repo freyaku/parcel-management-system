@@ -1,0 +1,20 @@
+<h2>List Sender</h2>
+<table class="table table-hover table-dark">
+  <thead>
+  <tr>
+    <th> # </th>
+    <th> Sender ID </th>
+    <th> Sender Name </th>
+    <th> Parcels </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+  <tr *ngFor="let sender of senderDb; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{sender._id}}</td>
+    <td>{{sender.name}}</td>
+    <td>{{sender.parcels}}</td>
+    </tr>
+  </tbody>
+  </table>
